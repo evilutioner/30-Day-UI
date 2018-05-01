@@ -9,17 +9,49 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var buttonWithOut: UIButton!
+    @IBOutlet weak var labelWithDay: UILabel!
+    
+    var nowDate = Date()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+        
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    let viewController = storyboard.instantiateViewController(withIdentifier :"myId")
+    self.present(viewController, animated: true, completion: nil)
+        
+        var firstDate = UserDefaults.standard.object(forKey: "MM") as! Date?
+        if firstDate == nil {
+            UserDefaults.standard.set(Date(), forKey: "MM")
+            firstDate = UserDefaults.standard.object(forKey: "MM") as! Date?
+        }
 
+        let timeInterval = (firstDate?.timeIntervalSinceNow)!
+        let days = -Int(timeInterval) / 60 / 60 / 24
+        //convert date to day and doing constant from it
+        labelWithDay.text = "\(days)"
+        //choosing
+        
+    }
+    
+    
+    
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        let secondViewController = segue.destination as! MainViewController2
+            secondViewController.daysFromStart = Int(labelWithDay.text!)! + 1
+        
+    }
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
