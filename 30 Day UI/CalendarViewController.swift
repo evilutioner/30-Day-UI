@@ -12,15 +12,12 @@ import UIKit
 // Надо, что бы при нажатии на каждую из 30 кнопок, переходило на ViewWuthTask и меняло переменнкб daysFromStart на номер этой кнопки
 class CalendarViewController: UIViewController {
     @IBAction func фсе(_ sender: UIButton) {
-//        func prepare(for segue: UIStoryboardSegue, sender: Any?){
-//            let secondViewController = segue.destination as! ViewWithTask
-//            secondViewController.daysFromStart = 2
-//    }
+       
+    }
 
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let newViewController = storyBoard.instantiateViewController(withIdentifier: "myId") as! ViewWithTask
-        self.present(newViewController, animated: true, completion: nil)
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        let secondViewController = segue.destination as! ViewWithTask
+        secondViewController.daysFromStart = Int(segue.identifier!)!
     }
     
     

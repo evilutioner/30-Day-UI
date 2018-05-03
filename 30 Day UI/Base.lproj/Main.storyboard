@@ -218,20 +218,12 @@ This project was built to provide a fun engaging way to improve your skills as a
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aiQ-Pr-iVr">
-                                <rect key="frame" x="24" y="521" width="321" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="vck-6M-piq"/>
                     </view>
                     <connections>
                         <outlet property="buttonWithComplete" destination="1IB-ZI-5Wa" id="8Xy-eU-byI"/>
-                        <outlet property="checkLabel" destination="aiQ-Pr-iVr" id="AB4-s3-3ML"/>
                         <outlet property="iDidItLabel" destination="Vjv-Z5-Svp" id="LOw-qU-Hz1"/>
                         <outlet property="illustrationToTask" destination="D02-hh-vV1" id="LmF-kd-Lw6"/>
                         <outlet property="labelWithDay" destination="gcC-VM-SGv" id="6qG-De-IxH"/>
@@ -264,6 +256,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                 <state key="normal" title="Button" image="unavailableTask"/>
                                 <connections>
                                     <action selector="actionButton2:" destination="tLW-nx-AFB" eventType="touchUpInside" id="ffl-kd-hMo"/>
+                                    <segue destination="xzq-CJ-ad9" kind="show" identifier="1" id="ryj-xb-DDv"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xs9-UN-vvc">
@@ -279,7 +272,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                 <state key="normal" title="Button" image="unavailableTask"/>
                                 <connections>
                                     <action selector="фсе:" destination="tLW-nx-AFB" eventType="touchUpInside" id="J8B-yK-RaV"/>
-                                    <segue destination="xzq-CJ-ad9" kind="show" id="ubJ-Fb-Awo"/>
+                                    <segue destination="xzq-CJ-ad9" kind="show" identifier="2" id="ubJ-Fb-Awo"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxn-BS-hYB">
@@ -293,6 +286,9 @@ This project was built to provide a fun engaging way to improve your skills as a
                                 <rect key="frame" x="162" y="153" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="unavailableTask"/>
+                                <connections>
+                                    <segue destination="xzq-CJ-ad9" kind="show" identifier="3" id="U1M-Rg-QZW"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJ3-Mg-Ds6">
                                 <rect key="frame" x="179" y="163" width="16" height="29"/>
@@ -305,6 +301,9 @@ This project was built to provide a fun engaging way to improve your skills as a
                                 <rect key="frame" x="231" y="153" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="unavailableTask"/>
+                                <connections>
+                                    <segue destination="xzq-CJ-ad9" kind="show" identifier="4" id="cJa-rY-Rsx"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Nx-kQ-kmY">
                                 <rect key="frame" x="247" y="163" width="16" height="29"/>
@@ -317,6 +316,9 @@ This project was built to provide a fun engaging way to improve your skills as a
                                 <rect key="frame" x="301" y="153" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="unavailableTask"/>
+                                <connections>
+                                    <segue destination="xzq-CJ-ad9" kind="show" identifier="5" id="f7q-dJ-pWu"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WdA-O9-Gpd">
                                 <rect key="frame" x="318" y="163" width="15" height="29"/>
@@ -329,6 +331,9 @@ This project was built to provide a fun engaging way to improve your skills as a
                                 <rect key="frame" x="26" y="221" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="unavailableTask"/>
+                                <connections>
+                                    <segue destination="xzq-CJ-ad9" kind="show" identifier="6" id="p47-D8-M4l"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7B-Wp-Ggt">
                                 <rect key="frame" x="42" y="231" width="16" height="29"/>
@@ -707,6 +712,6 @@ This project was built to provide a fun engaging way to improve your skills as a
         <image name="unavailableTask" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ubJ-Fb-Awo"/>
+        <segue reference="ryj-xb-DDv"/>
     </inferredMetricsTieBreakers>
 </document>
