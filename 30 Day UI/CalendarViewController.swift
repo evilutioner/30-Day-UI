@@ -12,7 +12,14 @@ import UIKit
 // Надо, что бы при нажатии на каждую из 30 кнопок, переходило на ViewWuthTask и меняло переменнкб daysFromStart на номер этой кнопки
 class CalendarViewController: UIViewController {
     @IBAction func фсе(_ sender: UIButton) {
-       
+        self.performSegue(withIdentifier: "3", sender: self)
+//        override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+//            if segue.identifier == "push" {
+//
+//            }
+//        }
+
+
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
