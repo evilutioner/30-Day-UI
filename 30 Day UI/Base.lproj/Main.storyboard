@@ -58,9 +58,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="18"/>
                                 <state key="normal" title="How This Works" backgroundImage="Button"/>
                                 <connections>
-                                    <segue destination="ga6-hw-smo" kind="popoverPresentation" popoverAnchorView="k8g-Tc-y4Y" id="Fc3-ow-e7l">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
+                                    <segue destination="ga6-hw-smo" kind="show" id="Fc3-ow-e7l"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PlJ-fd-irY">
@@ -734,6 +732,13 @@ This project was built to provide a fun engaging way to improve your skills as a
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXp-Ay-L70">
+                                <rect key="frame" x="158" y="626" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Reg-H4-veR"/>
@@ -769,6 +774,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                         <outlet property="buttonDay7" destination="Wyt-xh-e13" id="hrj-mi-j8F"/>
                         <outlet property="buttonDay8" destination="y2C-us-FGS" id="6KC-rK-LT5"/>
                         <outlet property="buttonDay9" destination="ozy-ly-2ga" id="TRN-cL-JW8"/>
+                        <outlet property="checklabel" destination="xXp-Ay-L70" id="yAo-KL-0YZ"/>
                         <outlet property="labelDay1" destination="xs9-UN-vvc" id="XeF-P2-Lci"/>
                         <outlet property="labelDay10" destination="gh0-du-P2Y" id="XHv-QL-vZZ"/>
                         <outlet property="labelDay11" destination="a0J-PJ-OAM" id="Dge-FV-ejA"/>
@@ -819,6 +825,6 @@ This project was built to provide a fun engaging way to improve your skills as a
         <image name="unavailableTask" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="U1M-Rg-QZW"/>
+        <segue reference="zkO-hL-V1L"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -12,14 +12,7 @@ import UIKit
 // Надо, что бы при нажатии на каждую из 30 кнопок, переходило на ViewWuthTask и меняло переменнкб daysFromStart на номер этой кнопки
 class CalendarViewController: UIViewController {
     @IBAction func фсе(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "3", sender: self)
-//        override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-//            if segue.identifier == "push" {
-//
-//            }
-//        }
-
-
+        
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
@@ -59,7 +52,8 @@ class CalendarViewController: UIViewController {
     @IBOutlet weak var labelDay28: UILabel!
     @IBOutlet weak var labelDay29: UILabel!
     @IBOutlet weak var labelDay30: UILabel!
-
+    @IBOutlet weak var checklabel: UILabel!
+    
     @IBOutlet weak var buttonDay1: UIButton!
     @IBOutlet weak var buttonDay2: UIButton!
     @IBOutlet weak var buttonDay3: UIButton!
@@ -98,6 +92,7 @@ class CalendarViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         buttons = [buttonDay1, buttonDay2, buttonDay3, buttonDay4, buttonDay5, buttonDay6, buttonDay7, buttonDay8, buttonDay9, buttonDay10, buttonDay11, buttonDay12, buttonDay13, buttonDay14, buttonDay15, buttonDay16, buttonDay17, buttonDay18, buttonDay19, buttonDay20, buttonDay21, buttonDay22, buttonDay23, buttonDay24, buttonDay25, buttonDay26, buttonDay27, buttonDay28, buttonDay29, buttonDay30]
         labels = [labelDay1, labelDay2, labelDay3, labelDay4, labelDay5, labelDay6, labelDay7, labelDay8, labelDay9, labelDay10, labelDay11, labelDay12, labelDay13, labelDay14, labelDay15, labelDay16, labelDay17, labelDay18, labelDay19, labelDay20, labelDay21, labelDay22, labelDay23, labelDay24, labelDay25, labelDay26, labelDay27, labelDay28, labelDay29, labelDay30]
         var i = 0
@@ -114,14 +109,28 @@ class CalendarViewController: UIViewController {
                 labels[i-1].alpha = 1
             }
         }
+        
+        
+        if buttonDay22.image(for: .normal) == #imageLiteral(resourceName: "undoingTask") {
+            checklabel.text = "lol,kek"
+        }
+        else {
+            checklabel.text = "huuuui"
+        }
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-//        let secondViewController = segue.destination as! ViewWithTask
-//        secondViewController.daysFromStart = daysFromStart
-//
-//    }
-
+    
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        let intIndex = Int(identifier)
+        if buttons[intIndex!].image(for: .normal) != #imageLiteral(resourceName: "unavailableTask") {
+            return true
+        }
+        else {
+            return false
+        }
+        
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

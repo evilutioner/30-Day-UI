@@ -9,7 +9,6 @@
 import UIKit
 
 class ViewWithTask: UIViewController {
-    @IBOutlet weak var checkLabel: UILabel!
     @IBOutlet weak var labelWithDay: UILabel!
     @IBOutlet weak var labelWithTask: UILabel!
     @IBOutlet weak var illustrationToTask: UIImageView!
@@ -18,9 +17,15 @@ class ViewWithTask: UIViewController {
     @IBOutlet weak var iDidItLabel: UILabel!
     
     @IBAction func buttonaction(_ sender: UIButton) {
-    buttonWithComplete.setImage(UIImage(named: "pressedButton"), for: UIControlState.normal)
-    iDidItLabel.text = ""
-    UserDefaults.standard.set(true, forKey: "\(daysFromStart)")
+        if buttonWithComplete.image(for: .normal) == UIImage(named: "pressedButton"){
+    buttonWithComplete.setImage(UIImage(named: "Button"), for: UIControlState.normal)
+    iDidItLabel.text = "I did it!"
+    UserDefaults.standard.set(false, forKey: "\(daysFromStart)")
+        } else {
+            buttonWithComplete.setImage(UIImage(named: "pressedButton"), for: UIControlState.normal)
+            iDidItLabel.text = ""
+            UserDefaults.standard.set(true, forKey: "\(daysFromStart)")
+        }
     }
     
     var daysFromStart = 0

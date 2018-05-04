@@ -19,16 +19,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-    let viewController = storyboard.instantiateViewController(withIdentifier :"myId")
-    self.present(viewController, animated: true, completion: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier :"myId")
+        self.present(viewController, animated: true, completion: nil)
         
         var firstDate = UserDefaults.standard.object(forKey: "MM") as! Date?
         if firstDate == nil {
             UserDefaults.standard.set(Date(), forKey: "MM")
             firstDate = UserDefaults.standard.object(forKey: "MM") as! Date?
         }
-
+        
         let timeInterval = (firstDate?.timeIntervalSinceNow)!
         let days = -Int(timeInterval) / 60 / 60 / 24
         //convert date to day and doing constant from it
@@ -39,9 +39,9 @@ class ViewController: UIViewController {
     
     
     
-        override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         let secondViewController = segue.destination as! MainViewController2
-            secondViewController.daysFromStart = Int(labelWithDay.text!)! + 1
+        secondViewController.daysFromStart = Int(labelWithDay.text!)! + 1
         
     }
     

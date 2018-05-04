@@ -10,6 +10,7 @@
 		094567B4EE882D4E35D9ECD8 /* Pods_30_Day_UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC7C43BC25F80473BA4655F /* Pods_30_Day_UI.framework */; };
 		6A678B0BE6CC96152FAAF475 /* Pods_30_Day_UIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA2FD11D4A755D8AC71894A /* Pods_30_Day_UIUITests.framework */; };
 		C5000887209505A500455C81 /* MainViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5000886209505A500455C81 /* MainViewController2.swift */; };
+		C51C4B0F209CEF4800111059 /* varsForEveryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51C4B0E209CEF4700111059 /* varsForEveryTask.swift */; };
 		C563601D20962F010019E474 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C563601C20962F000019E474 /* CalendarViewController.swift */; };
 		C5A28C1B2083E7AD00F6CBFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A28C1A2083E7AD00F6CBFF /* AppDelegate.swift */; };
 		C5A28C1D2083E7AD00F6CBFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A28C1C2083E7AD00F6CBFF /* ViewController.swift */; };
@@ -47,6 +48,7 @@
 		4FA2FD11D4A755D8AC71894A /* Pods_30_Day_UIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_30_Day_UIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E93E6F1937BFC7B8EC6C1BD /* Pods-30 Day UIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-30 Day UIUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-30 Day UIUITests/Pods-30 Day UIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C5000886209505A500455C81 /* MainViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController2.swift; sourceTree = "<group>"; };
+		C51C4B0E209CEF4700111059 /* varsForEveryTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = varsForEveryTask.swift; sourceTree = "<group>"; };
 		C525DFCD2084090E00D5C157 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		C525DFCE2084091200D5C157 /* SF-Pro-Display-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Black.otf"; sourceTree = "<group>"; };
 		C525DFD52084098200D5C157 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				C5F7CC3820889E1A00BCA84C /* Ilustratuions.xcassets */,
 				C5A28C232083E7AE00F6CBFF /* LaunchScreen.storyboard */,
 				C5A28C262083E7AE00F6CBFF /* Info.plist */,
+				C51C4B0E209CEF4700111059 /* varsForEveryTask.swift */,
 			);
 			path = "30 Day UI";
 			sourceTree = "<group>";
@@ -501,6 +504,7 @@
 			files = (
 				C563601D20962F010019E474 /* CalendarViewController.swift in Sources */,
 				C5A28C1D2083E7AD00F6CBFF /* ViewController.swift in Sources */,
+				C51C4B0F209CEF4800111059 /* varsForEveryTask.swift in Sources */,
 				C5F7CC3B2088A20200BCA84C /* ViewWithTask.swift in Sources */,
 				C5000887209505A500455C81 /* MainViewController2.swift in Sources */,
 				C5A28C1B2083E7AD00F6CBFF /* AppDelegate.swift in Sources */,
