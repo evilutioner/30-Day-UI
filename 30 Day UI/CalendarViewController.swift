@@ -22,37 +22,8 @@ class CalendarViewController: UIViewController {
     
     
     @IBOutlet weak var mainLabel: UILabel!
-    @IBOutlet weak var labelDay1: UILabel!
-    @IBOutlet weak var labelDay2: UILabel!
-    @IBOutlet weak var labelDay3: UILabel!
-    @IBOutlet weak var labelDay4: UILabel!
-    @IBOutlet weak var labelDay5: UILabel!
-    @IBOutlet weak var labelDay6: UILabel!
-    @IBOutlet weak var labelDay7: UILabel!
-    @IBOutlet weak var labelDay8: UILabel!
-    @IBOutlet weak var labelDay9: UILabel!
-    @IBOutlet weak var labelDay10: UILabel!
-    @IBOutlet weak var labelDay11: UILabel!
-    @IBOutlet weak var labelDay12: UILabel!
-    @IBOutlet weak var labelDay13: UILabel!
-    @IBOutlet weak var labelDay14: UILabel!
-    @IBOutlet weak var labelDay15: UILabel!
-    @IBOutlet weak var labelDay16: UILabel!
-    @IBOutlet weak var labelDay17: UILabel!
-    @IBOutlet weak var labelDay18: UILabel!
-    @IBOutlet weak var labelDay19: UILabel!
-    @IBOutlet weak var labelDay20: UILabel!
-    @IBOutlet weak var labelDay21: UILabel!
-    @IBOutlet weak var labelDay22: UILabel!
-    @IBOutlet weak var labelDay23: UILabel!
-    @IBOutlet weak var labelDay24: UILabel!
-    @IBOutlet weak var labelDay25: UILabel!
-    @IBOutlet weak var labelDay26: UILabel!
-    @IBOutlet weak var labelDay27: UILabel!
-    @IBOutlet weak var labelDay28: UILabel!
-    @IBOutlet weak var labelDay29: UILabel!
-    @IBOutlet weak var labelDay30: UILabel!
     @IBOutlet weak var checklabel: UILabel!
+    @IBOutlet weak var labelWithCompletedDay: UILabel!
     
     @IBOutlet weak var buttonDay1: UIButton!
     @IBOutlet weak var buttonDay2: UIButton!
@@ -89,43 +60,49 @@ class CalendarViewController: UIViewController {
     var daysFromStart = 0
     var buttons: [UIButton] = []
     var labels: [UILabel] = []
-
+    var modDaysFromStart = UserDefaults.standard.object(forKey: "modDaysFromStart")
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        if modDaysFromStart == nil {
+            UserDefaults.standard.set(
+            daysFromStart, forKey: "modDaysFromStart")
+            modDaysFromStart = UserDefaults.standard.object(forKey: "modDaysFromStart")
+        }
         buttons = [buttonDay1, buttonDay2, buttonDay3, buttonDay4, buttonDay5, buttonDay6, buttonDay7, buttonDay8, buttonDay9, buttonDay10, buttonDay11, buttonDay12, buttonDay13, buttonDay14, buttonDay15, buttonDay16, buttonDay17, buttonDay18, buttonDay19, buttonDay20, buttonDay21, buttonDay22, buttonDay23, buttonDay24, buttonDay25, buttonDay26, buttonDay27, buttonDay28, buttonDay29, buttonDay30]
-        labels = [labelDay1, labelDay2, labelDay3, labelDay4, labelDay5, labelDay6, labelDay7, labelDay8, labelDay9, labelDay10, labelDay11, labelDay12, labelDay13, labelDay14, labelDay15, labelDay16, labelDay17, labelDay18, labelDay19, labelDay20, labelDay21, labelDay22, labelDay23, labelDay24, labelDay25, labelDay26, labelDay27, labelDay28, labelDay29, labelDay30]
         var i = 0
-        while i < daysFromStart {
+        var numberOfCompletedTask = 0
+        while i < (modDaysFromStart as! Int?)! + 1 {
             i += 1
             let xxx = UserDefaults.standard.object(forKey: "\(i)")
             if xxx == nil {
-                buttons[i - 1].setImage(#imageLiteral(resourceName: "undoingTask"), for: .normal)
-                labels[i-1].alpha = 1
+                buttons[i - 1].setBackgroundImage(#imageLiteral(resourceName: "undoingTask"), for: .normal)
+                
             }
             if xxx as? Bool == true {
-                buttons[i - 1].setImage(#imageLiteral(resourceName: "doingTask"), for: .normal)
-                labels[i-1].textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-                labels[i-1].alpha = 1
+                buttons[i - 1].setBackgroundImage(#imageLiteral(resourceName: "doingTask"), for: .normal)
+                buttons[i - 1].setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
+                numberOfCompletedTask += 1
+                
+            }
+            if xxx as? Bool == false {
+                buttons[i - 1].setBackgroundImage(#imageLiteral(resourceName: "undoingTask"), for: .normal)
+                buttons[i - 1].setTitleColor(#colorLiteral(red: 0.3490196078, green: 0.3529411765, blue: 0.4, alpha: 1), for: .normal)
             }
         }
-        
-        
-        if buttonDay22.image(for: .normal) == #imageLiteral(resourceName: "undoingTask") {
-            checklabel.text = "lol,kek"
-        }
-        else {
-            checklabel.text = "huuuui"
-        }
+        labelWithCompletedDay.text = "\(numberOfCompletedTask)"
     }
     
     
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        let intIndex = Int(identifier)
-        if buttons[intIndex!].image(for: .normal) != #imageLiteral(resourceName: "unavailableTask") {
+        let intIndex = Int(identifier)! - 1
+
+        if buttons[intIndex].backgroundImage(for: .normal) != #imageLiteral(resourceName: "unavailableTask") {
             return true
         }
+        
         else {
             return false
         }

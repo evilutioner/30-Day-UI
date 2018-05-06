@@ -10,8 +10,17 @@
 		094567B4EE882D4E35D9ECD8 /* Pods_30_Day_UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC7C43BC25F80473BA4655F /* Pods_30_Day_UI.framework */; };
 		6A678B0BE6CC96152FAAF475 /* Pods_30_Day_UIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA2FD11D4A755D8AC71894A /* Pods_30_Day_UIUITests.framework */; };
 		C5000887209505A500455C81 /* MainViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5000886209505A500455C81 /* MainViewController2.swift */; };
-		C51C4B0F209CEF4800111059 /* varsForEveryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51C4B0E209CEF4700111059 /* varsForEveryTask.swift */; };
+		C53E6ADF209EEC07000F62CA /* 40.png in Resources */ = {isa = PBXBuildFile; fileRef = C53E6AD7209EEC06000F62CA /* 40.png */; };
+		C53E6AE0209EEC07000F62CA /* 87.png in Resources */ = {isa = PBXBuildFile; fileRef = C53E6AD8209EEC06000F62CA /* 87.png */; };
+		C53E6AE1209EEC07000F62CA /* 76.png in Resources */ = {isa = PBXBuildFile; fileRef = C53E6AD9209EEC06000F62CA /* 76.png */; };
+		C53E6AE2209EEC07000F62CA /* 152.png in Resources */ = {isa = PBXBuildFile; fileRef = C53E6ADA209EEC06000F62CA /* 152.png */; };
+		C53E6AE3209EEC07000F62CA /* 80.png in Resources */ = {isa = PBXBuildFile; fileRef = C53E6ADB209EEC07000F62CA /* 80.png */; };
+		C53E6AE4209EEC07000F62CA /* 120.png in Resources */ = {isa = PBXBuildFile; fileRef = C53E6ADC209EEC07000F62CA /* 120.png */; };
+		C53E6AE5209EEC07000F62CA /* 60.png in Resources */ = {isa = PBXBuildFile; fileRef = C53E6ADD209EEC07000F62CA /* 60.png */; };
+		C53E6AE6209EEC07000F62CA /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = C53E6ADE209EEC07000F62CA /* 58.png */; };
+		C53E6AE8209EEC5A000F62CA /* 180.png in Resources */ = {isa = PBXBuildFile; fileRef = C53E6AE7209EEC5A000F62CA /* 180.png */; };
 		C563601D20962F010019E474 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C563601C20962F000019E474 /* CalendarViewController.swift */; };
+		C56758FC209EE83500613B34 /* AchivmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56758FB209EE83500613B34 /* AchivmentViewController.swift */; };
 		C5A28C1B2083E7AD00F6CBFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A28C1A2083E7AD00F6CBFF /* AppDelegate.swift */; };
 		C5A28C1D2083E7AD00F6CBFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A28C1C2083E7AD00F6CBFF /* ViewController.swift */; };
 		C5A28C202083E7AD00F6CBFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5A28C1E2083E7AD00F6CBFF /* Main.storyboard */; };
@@ -48,13 +57,23 @@
 		4FA2FD11D4A755D8AC71894A /* Pods_30_Day_UIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_30_Day_UIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E93E6F1937BFC7B8EC6C1BD /* Pods-30 Day UIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-30 Day UIUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-30 Day UIUITests/Pods-30 Day UIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C5000886209505A500455C81 /* MainViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController2.swift; sourceTree = "<group>"; };
-		C51C4B0E209CEF4700111059 /* varsForEveryTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = varsForEveryTask.swift; sourceTree = "<group>"; };
 		C525DFCD2084090E00D5C157 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		C525DFCE2084091200D5C157 /* SF-Pro-Display-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Black.otf"; sourceTree = "<group>"; };
 		C525DFD52084098200D5C157 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
 		C525DFD62084098200D5C157 /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
 		C525DFD72084098200D5C157 /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
+		C53E6AD7209EEC06000F62CA /* 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 40.png; path = icons/40.png; sourceTree = SOURCE_ROOT; };
+		C53E6AD8209EEC06000F62CA /* 87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 87.png; path = icons/87.png; sourceTree = SOURCE_ROOT; };
+		C53E6AD9209EEC06000F62CA /* 76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 76.png; path = icons/76.png; sourceTree = SOURCE_ROOT; };
+		C53E6ADA209EEC06000F62CA /* 152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 152.png; path = icons/152.png; sourceTree = SOURCE_ROOT; };
+		C53E6ADB209EEC07000F62CA /* 80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 80.png; path = icons/80.png; sourceTree = SOURCE_ROOT; };
+		C53E6ADC209EEC07000F62CA /* 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 120.png; path = icons/120.png; sourceTree = SOURCE_ROOT; };
+		C53E6ADD209EEC07000F62CA /* 60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 60.png; path = icons/60.png; sourceTree = SOURCE_ROOT; };
+		C53E6ADE209EEC07000F62CA /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 58.png; path = icons/58.png; sourceTree = SOURCE_ROOT; };
+		C53E6AE7209EEC5A000F62CA /* 180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 180.png; path = icons/180.png; sourceTree = SOURCE_ROOT; };
 		C563601C20962F000019E474 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		C56758FA209E77D300613B34 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		C56758FB209EE83500613B34 /* AchivmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchivmentViewController.swift; sourceTree = "<group>"; };
 		C5A28C172083E7AD00F6CBFF /* 30 Day UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "30 Day UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5A28C1A2083E7AD00F6CBFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5A28C1C2083E7AD00F6CBFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				C525DFD52084098200D5C157 /* SF-Pro-Display-Medium.otf */,
+				C56758FA209E77D300613B34 /* SF-Pro-Display-Regular.otf */,
 				C525DFCE2084091200D5C157 /* SF-Pro-Display-Black.otf */,
 				C525DFCD2084090E00D5C157 /* SF-Pro-Display-Bold.otf */,
 			);
@@ -155,9 +175,27 @@
 			path = "SF Text";
 			sourceTree = "<group>";
 		};
+		C53E6AD6209EEBF5000F62CA /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				C53E6AD7209EEC06000F62CA /* 40.png */,
+				C53E6ADE209EEC07000F62CA /* 58.png */,
+				C53E6ADD209EEC07000F62CA /* 60.png */,
+				C53E6AD9209EEC06000F62CA /* 76.png */,
+				C53E6ADB209EEC07000F62CA /* 80.png */,
+				C53E6AD8209EEC06000F62CA /* 87.png */,
+				C53E6ADC209EEC07000F62CA /* 120.png */,
+				C53E6ADA209EEC06000F62CA /* 152.png */,
+				C53E6AE7209EEC5A000F62CA /* 180.png */,
+			);
+			name = icons;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		C5A28C0E2083E7AD00F6CBFF = {
 			isa = PBXGroup;
 			children = (
+				C53E6AD6209EEBF5000F62CA /* icons */,
 				C5A28C192083E7AD00F6CBFF /* 30 Day UI */,
 				C5A28C2E2083E7AE00F6CBFF /* 30 Day UITests */,
 				C5A28C392083E7AE00F6CBFF /* 30 Day UIUITests */,
@@ -188,10 +226,10 @@
 				C563601C20962F000019E474 /* CalendarViewController.swift */,
 				C5E0D4C0208C747200D00E12 /* Assets.xcassets */,
 				C5A28C1E2083E7AD00F6CBFF /* Main.storyboard */,
+				C56758FB209EE83500613B34 /* AchivmentViewController.swift */,
 				C5F7CC3820889E1A00BCA84C /* Ilustratuions.xcassets */,
 				C5A28C232083E7AE00F6CBFF /* LaunchScreen.storyboard */,
 				C5A28C262083E7AE00F6CBFF /* Info.plist */,
-				C51C4B0E209CEF4700111059 /* varsForEveryTask.swift */,
 			);
 			path = "30 Day UI";
 			sourceTree = "<group>";
@@ -327,9 +365,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C53E6ADF209EEC07000F62CA /* 40.png in Resources */,
 				C5F7CC3920889E1A00BCA84C /* Ilustratuions.xcassets in Resources */,
+				C53E6AE8209EEC5A000F62CA /* 180.png in Resources */,
+				C53E6AE2209EEC07000F62CA /* 152.png in Resources */,
+				C53E6AE0209EEC07000F62CA /* 87.png in Resources */,
 				C5A28C252083E7AE00F6CBFF /* LaunchScreen.storyboard in Resources */,
 				C5E0D4C1208C747200D00E12 /* Assets.xcassets in Resources */,
+				C53E6AE3209EEC07000F62CA /* 80.png in Resources */,
+				C53E6AE4209EEC07000F62CA /* 120.png in Resources */,
+				C53E6AE1209EEC07000F62CA /* 76.png in Resources */,
+				C53E6AE5209EEC07000F62CA /* 60.png in Resources */,
+				C53E6AE6209EEC07000F62CA /* 58.png in Resources */,
 				C5A28C202083E7AD00F6CBFF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,9 +404,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-30 Day UI/Pods-30 Day UI-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -502,9 +552,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C56758FC209EE83500613B34 /* AchivmentViewController.swift in Sources */,
 				C563601D20962F010019E474 /* CalendarViewController.swift in Sources */,
 				C5A28C1D2083E7AD00F6CBFF /* ViewController.swift in Sources */,
-				C51C4B0F209CEF4800111059 /* varsForEveryTask.swift in Sources */,
 				C5F7CC3B2088A20200BCA84C /* ViewWithTask.swift in Sources */,
 				C5000887209505A500455C81 /* MainViewController2.swift in Sources */,
 				C5A28C1B2083E7AD00F6CBFF /* AppDelegate.swift in Sources */,
