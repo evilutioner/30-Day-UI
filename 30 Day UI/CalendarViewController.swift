@@ -8,21 +8,10 @@
 
 import UIKit
 
-
-// Надо, что бы при нажатии на каждую из 30 кнопок, переходило на ViewWuthTask и меняло переменнкб daysFromStart на номер этой кнопки
 class CalendarViewController: UIViewController {
-    @IBAction func фсе(_ sender: UIButton) {
-        
-    }
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        let secondViewController = segue.destination as! ViewWithTask
-        secondViewController.daysFromStart = Int(segue.identifier!)!
-    }
-    
-    
+   
+    @IBOutlet weak var label30Tasks: UILabel!
     @IBOutlet weak var mainLabel: UILabel!
-    @IBOutlet weak var checklabel: UILabel!
     @IBOutlet weak var labelWithCompletedDay: UILabel!
     
     @IBOutlet weak var buttonDay1: UIButton!
@@ -70,16 +59,18 @@ class CalendarViewController: UIViewController {
             daysFromStart, forKey: "modDaysFromStart")
             modDaysFromStart = UserDefaults.standard.object(forKey: "modDaysFromStart")
         }
+        
         buttons = [buttonDay1, buttonDay2, buttonDay3, buttonDay4, buttonDay5, buttonDay6, buttonDay7, buttonDay8, buttonDay9, buttonDay10, buttonDay11, buttonDay12, buttonDay13, buttonDay14, buttonDay15, buttonDay16, buttonDay17, buttonDay18, buttonDay19, buttonDay20, buttonDay21, buttonDay22, buttonDay23, buttonDay24, buttonDay25, buttonDay26, buttonDay27, buttonDay28, buttonDay29, buttonDay30]
+        
         var i = 0
         var numberOfCompletedTask = 0
         while i < (modDaysFromStart as! Int?)! + 1 {
             i += 1
             let xxx = UserDefaults.standard.object(forKey: "\(i)")
-            if xxx == nil {
-                buttons[i - 1].setBackgroundImage(#imageLiteral(resourceName: "undoingTask"), for: .normal)
-                
-            }
+        //    if xxx == nil {
+          //      buttons[i - 1].setBackgroundImage(#imageLiteral(resourceName: "undoingTask"), for: .normal)
+
+            //}
             if xxx as? Bool == true {
                 buttons[i - 1].setBackgroundImage(#imageLiteral(resourceName: "doingTask"), for: .normal)
                 buttons[i - 1].setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
@@ -87,14 +78,24 @@ class CalendarViewController: UIViewController {
                 
             }
             if xxx as? Bool == false {
-                buttons[i - 1].setBackgroundImage(#imageLiteral(resourceName: "undoingTask"), for: .normal)
+                buttons[i - 1].setBackgroundImage(UIImage(named: "undoingTask"), for: .normal)
                 buttons[i - 1].setTitleColor(#colorLiteral(red: 0.3490196078, green: 0.3529411765, blue: 0.4, alpha: 1), for: .normal)
             }
         }
         labelWithCompletedDay.text = "\(numberOfCompletedTask)"
+        if numberOfCompletedTask > 9 {
+            label30Tasks.text = "            /30 tasks are completed!"
+        }
+        else {
+            label30Tasks.text = "      /30 tasks are completed!"
+        }
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        let secondViewController = segue.destination as! ViewWithTask
+        secondViewController.daysFromStart = Int(segue.identifier!)!
+    }
+
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         let intIndex = Int(identifier)! - 1

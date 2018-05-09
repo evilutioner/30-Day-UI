@@ -14,7 +14,6 @@ class ViewWithTask: UIViewController {
     @IBOutlet weak var illustrationToTask: UIImageView!
     @IBOutlet weak var labelWithHint: UILabel!
     @IBOutlet weak var buttonWithComplete: UIButton!
-    @IBOutlet weak var iDidItLabel: UILabel!
     
     @IBAction func buttonaction(_ sender: UIButton) {
         
@@ -38,21 +37,7 @@ class ViewWithTask: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        var i = 0
-//        var x = 0
-//        while i < daysFromStart{
-//            i += 1
-//            let isDoneInScreen = UserDefaults.standard.bool(forKey: "\(i)")
-//            if isDoneInScreen == true {
-//                x += 1
-//            }
-//            if x == 5 {
-//                let secondViewController:UIViewController = AchivmentViewController()
-//                self.present(secondViewController, animated: true, completion: nil)
-//
-//            }
-//
-//        }
+
         
         
         var firstDate = UserDefaults.standard.object(forKey: "MM") as! Date?
@@ -67,6 +52,9 @@ class ViewWithTask: UIViewController {
         if isDone == true {
             buttonWithComplete.setBackgroundImage(UIImage(named: "pressedButton"), for: UIControlState.normal)
         }
+        else {
+            UserDefaults.standard.set(false, forKey: "\(daysFromStart)")
+        }
         let dayString = "Day " + String(daysFromStart)
         let dayImage = "Illustration\(daysFromStart)"
         
@@ -77,12 +65,16 @@ class ViewWithTask: UIViewController {
         
         
         switch daysFromStart {
+        case 0:
+            labelWithDay.text = "Day 1"
+            labelWithHint.text = arrayWithText[0]
+            labelWithTask.text = arrayWithTask[0]
+            illustrationToTask.image = #imageLiteral(resourceName: "Illustration1")
         case 1 ... 30:
             labelWithDay.text = dayString
             labelWithHint.text = arrayWithText[daysFromStart - 1]
             labelWithTask.text = arrayWithTask[daysFromStart - 1]
             illustrationToTask.image = UIImage(named: dayImage)
-            
         default:
             labelWithDay.text = "Day 1(nil)"
             labelWithHint.text = arrayWithText[1]

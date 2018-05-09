@@ -24,16 +24,16 @@ class ViewController: UIViewController {
         self.present(viewController, animated: true, completion: nil)
         
         var firstDate = UserDefaults.standard.object(forKey: "MM") as! Date?
+        
         if firstDate == nil {
             UserDefaults.standard.set(Date(), forKey: "MM")
             firstDate = UserDefaults.standard.object(forKey: "MM") as! Date?
         }
         
         let timeInterval = (firstDate?.timeIntervalSinceNow)!
-        let days = -Int(timeInterval) / 60 / 60 / 24
-        //convert date to day and doing constant from it
+        var days = -Int(timeInterval) / 60 / 60 / 24
+
         labelWithDay.text = "\(days)"
-        //choosing
         
     }
     
