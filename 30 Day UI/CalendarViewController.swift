@@ -53,7 +53,6 @@ class CalendarViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         if modDaysFromStart == nil {
             UserDefaults.standard.set(
             daysFromStart, forKey: "modDaysFromStart")
@@ -64,13 +63,14 @@ class CalendarViewController: UIViewController {
         
         var i = 0
         var numberOfCompletedTask = 0
-        while i < (modDaysFromStart as! Int?)! + 1 {
+        while i < modDaysFromStart as! Int {
             i += 1
             let xxx = UserDefaults.standard.object(forKey: "\(i)")
-        //    if xxx == nil {
-          //      buttons[i - 1].setBackgroundImage(#imageLiteral(resourceName: "undoingTask"), for: .normal)
+            if xxx == nil {
+                buttons[i - 1].setBackgroundImage(#imageLiteral(resourceName: "undoingTask"), for: .normal)
+                buttons[i - 1].setTitleColor(#colorLiteral(red: 0.3490196078, green: 0.3529411765, blue: 0.4, alpha: 1), for: .normal)
 
-            //}
+            }
             if xxx as? Bool == true {
                 buttons[i - 1].setBackgroundImage(#imageLiteral(resourceName: "doingTask"), for: .normal)
                 buttons[i - 1].setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
@@ -84,7 +84,7 @@ class CalendarViewController: UIViewController {
         }
         labelWithCompletedDay.text = "\(numberOfCompletedTask)"
         if numberOfCompletedTask > 9 {
-            label30Tasks.text = "            /30 tasks are completed!"
+            label30Tasks.text = "           /30 tasks are completed!"
         }
         else {
             label30Tasks.text = "      /30 tasks are completed!"

@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewWithTask: UIViewController {
+    @IBOutlet weak var iDidItLabel: UILabel!
     @IBOutlet weak var labelWithDay: UILabel!
     @IBOutlet weak var labelWithTask: UILabel!
     @IBOutlet weak var illustrationToTask: UIImageView!
@@ -17,15 +18,37 @@ class ViewWithTask: UIViewController {
     
     @IBAction func buttonaction(_ sender: UIButton) {
         
-        if buttonWithComplete.backgroundImage(for: .normal) == UIImage(named: "pressedButton"){
-            buttonWithComplete.setBackgroundImage(UIImage(named: "Button"), for: UIControlState.normal)
-            buttonWithComplete.setTitle(texOfButtonWhenNormal, for: .normal)
+        if buttonWithComplete.image(for: .normal) == UIImage(named: "pressedButton"){
+            buttonWithComplete.setImage(UIImage(named: "Button"), for: UIControlState.normal)
             UserDefaults.standard.set(false, forKey: "\(daysFromStart)")
+            iDidItLabel.isHidden = false
+            numberOfCompletedTask -= 1
         } else {
-            buttonWithComplete.setBackgroundImage(UIImage(named: "pressedButton"), for: UIControlState.normal)
-            buttonWithComplete.setTitle(textOfButtonWhenPressed, for: .normal)
+            buttonWithComplete.setImage(UIImage(named: "pressedButton"), for: UIControlState.normal)
             UserDefaults.standard.set(true, forKey: "\(daysFromStart)")
+            iDidItLabel.isHidden = true
+            numberOfCompletedTask += 1
+            
+            if numberOfCompletedTask == 10 {
+                show(<#T##vc: UIViewController##UIViewController#>, sender: <#T##Any?#>)
+            }
+            if numberOfCompletedTask == 20 {
+                
+            }
+            if numberOfCompletedTask == 30 {
+                
+            }
         }
+        
+//        if buttonWithComplete.backgroundImage(for: .normal) == UIImage(named: "pressedButton"){
+//            buttonWithComplete.setBackgroundImage(UIImage(named: "Button"), for: UIControlState.normal)
+//            buttonWithComplete.setTitle(texOfButtonWhenNormal, for: .normal)
+//            UserDefaults.standard.set(false, forKey: "\(daysFromStart)")
+//        } else {
+//            buttonWithComplete.setBackgroundImage(UIImage(named: "pressedButton"), for: UIControlState.normal)
+//            buttonWithComplete.setTitle(textOfButtonWhenPressed, for: .normal)
+//            UserDefaults.standard.set(true, forKey: "\(daysFromStart)")
+//        }
     }
     
     
@@ -33,12 +56,10 @@ class ViewWithTask: UIViewController {
     var daysFromStart = 0
     var textOfButtonWhenPressed = ""
     var texOfButtonWhenNormal = "I did it!"
+    var numberOfCompletedTask = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
-        
         
         var firstDate = UserDefaults.standard.object(forKey: "MM") as! Date?
         if firstDate == nil {
@@ -46,14 +67,14 @@ class ViewWithTask: UIViewController {
             firstDate = UserDefaults.standard.object(forKey: "MM") as! Date?
         }
 
-        
-
         let isDone = UserDefaults.standard.bool(forKey: "\(daysFromStart)")
         if isDone == true {
-            buttonWithComplete.setBackgroundImage(UIImage(named: "pressedButton"), for: UIControlState.normal)
+            buttonWithComplete.setImage(UIImage(named: "pressedButton"), for: UIControlState.normal)
+            iDidItLabel.isHidden = true
         }
         else {
             UserDefaults.standard.set(false, forKey: "\(daysFromStart)")
+            iDidItLabel.isHidden = false
         }
         let dayString = "Day " + String(daysFromStart)
         let dayImage = "Illustration\(daysFromStart)"
@@ -83,19 +104,11 @@ class ViewWithTask: UIViewController {
 
         }
         
-        if buttonWithComplete.backgroundImage(for: .normal) == UIImage(named: "pressedButton"){
-            buttonWithComplete.setTitle(" ", for: .normal)
-        } else {
-            buttonWithComplete.setTitle("I did it! ", for: .normal)
-        }
-        
-        // Do any additional setup after loading the view.
     }
 
-//    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-//        let intIndex = Int(identifier)! - 1
-//        
-//    }
+    override func viewDidAppear(_ animated: Bool) {
+        (buttonWithComplete.subviews[0] as! UIImageView).contentMode = .scaleAspectFit
+    }
 
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
@@ -104,9 +117,7 @@ class ViewWithTask: UIViewController {
     
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        (buttonWithComplete.subviews[0] as! UIImageView).contentMode = .scaleAspectFit
-    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

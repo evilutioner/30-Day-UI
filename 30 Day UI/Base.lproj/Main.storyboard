@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -30,22 +30,22 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_0_Day_UI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WelcomeScreenLogo" translatesAutoresizingMaskIntoConstraints="NO" id="eR9-pV-WtU">
-                                <rect key="frame" x="58" y="44" width="300" height="28"/>
+                                <rect key="frame" x="38" y="44" width="300" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome Friend!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMx-Sg-nfl">
-                                <rect key="frame" x="116" y="160" width="184" height="32"/>
+                                <rect key="frame" x="96" y="160" width="184" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Gg-F9-LPM">
-                                <rect key="frame" x="24" y="213" width="366" height="172"/>
+                                <rect key="frame" x="24" y="213" width="327" height="172"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <string key="text">Over the next 30 days, you'll get 30 tasks to create UI elements for mobile and web.  
 This project was built to provide a fun engaging way to improve your skills as a designer, earn rewards, and get feedback from others.</string>
@@ -54,7 +54,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8g-Tc-y4Y">
-                                <rect key="frame" x="127" y="653" width="160" height="48"/>
+                                <rect key="frame" x="107.5" y="584" width="160" height="48"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="18"/>
                                 <state key="normal" title="How This Works" backgroundImage="Button"/>
                                 <connections>
@@ -69,11 +69,11 @@ This project was built to provide a fun engaging way to improve your skills as a
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ellipse3" translatesAutoresizingMaskIntoConstraints="NO" id="WLv-9k-OqG">
-                                <rect key="frame" x="173" y="116" width="20" height="20"/>
+                                <rect key="frame" x="156" y="116" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ellipse2" translatesAutoresizingMaskIntoConstraints="NO" id="btM-OF-t8c">
-                                <rect key="frame" x="222" y="116" width="20" height="20"/>
+                                <rect key="frame" x="200" y="116" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -98,14 +98,14 @@ This project was built to provide a fun engaging way to improve your skills as a
             <objects>
                 <viewController id="ga6-hw-smo" customClass="MainViewController2" customModule="_0_Day_UI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7hS-aX-xHv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cXT-8o-YdB">
-                                <rect key="frame" x="24" y="44" width="366" height="656"/>
+                                <rect key="frame" x="24" y="44" width="327" height="587"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="H5e-HN-25f">
-                                        <rect key="frame" x="33" y="0.0" width="300" height="136.66666666666666"/>
+                                        <rect key="frame" x="13.5" y="0.0" width="300" height="137"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="iWq-Ro-19D">
                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="84"/>
@@ -132,10 +132,10 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="U2L-j3-FrY">
-                                                <rect key="frame" x="62.333333333333329" y="108" width="175.66666666666669" height="28.666666666666657"/>
+                                                <rect key="frame" x="62.5" y="108" width="175.5" height="29"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How This Works" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBe-gc-t8h">
-                                                        <rect key="frame" x="0.0" y="0.0" width="175.66666666666666" height="28.666666666666668"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="175.5" height="29"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -145,10 +145,10 @@ This project was built to provide a fun engaging way to improve your skills as a
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="gfa-pT-QQi">
-                                        <rect key="frame" x="0.0" y="240" width="366" height="220.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="186.5" width="327" height="259"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="mNS-WZ-Yui">
-                                                <rect key="frame" x="0.0" y="0.0" width="366" height="38.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="327" height="38.5"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ellipse" translatesAutoresizingMaskIntoConstraints="NO" id="ibA-tG-oUg">
                                                         <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
@@ -159,7 +159,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Every day (except weekends) you'll get an element to design" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCf-u1-eTW">
-                                                        <rect key="frame" x="32" y="0.0" width="334" height="38.333333333333336"/>
+                                                        <rect key="frame" x="32" y="0.0" width="295" height="38.5"/>
                                                         <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="16"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -167,7 +167,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="1f7-hV-zDj">
-                                                <rect key="frame" x="0.0" y="54.333333333333314" width="366" height="38.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="54.5" width="327" height="57.5"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ellipse" translatesAutoresizingMaskIntoConstraints="NO" id="5DS-WU-Rox">
                                                         <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
@@ -178,7 +178,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some prompts are intentionally high-level, so it's up to you to interpret how to design it" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTQ-V8-j1g">
-                                                        <rect key="frame" x="32" y="0.0" width="334" height="38.333333333333336"/>
+                                                        <rect key="frame" x="32" y="0.0" width="295" height="57.5"/>
                                                         <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="16"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -186,7 +186,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Kqg-vc-8Hb">
-                                                <rect key="frame" x="0.0" y="108.66666666666667" width="366" height="57.333333333333329"/>
+                                                <rect key="frame" x="0.0" y="128" width="327" height="76.5"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ellipse" translatesAutoresizingMaskIntoConstraints="NO" id="QL9-gF-SLn">
                                                         <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
@@ -197,7 +197,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5QY-K9-TrS">
-                                                        <rect key="frame" x="32" y="0.0" width="334" height="57.333333333333336"/>
+                                                        <rect key="frame" x="32" y="0.0" width="295" height="76.5"/>
                                                         <string key="text">Post your work to dribbble or Twitter with #30daysUI and your task number (ex. "Just finished my first design for #30daysUI #1")</string>
                                                         <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="16"/>
                                                         <nil key="textColor"/>
@@ -206,7 +206,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="jdF-Y3-Zfl">
-                                                <rect key="frame" x="0.0" y="182" width="366" height="38.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="220.5" width="327" height="38.5"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ellipse" translatesAutoresizingMaskIntoConstraints="NO" id="bIE-va-qq2">
                                                         <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
@@ -217,7 +217,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Become a better designer over the course of only 30 days!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mor-mT-qRs">
-                                                        <rect key="frame" x="32" y="0.0" width="334" height="38.333333333333336"/>
+                                                        <rect key="frame" x="32" y="0.0" width="295" height="38.5"/>
                                                         <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="16"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -227,7 +227,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7WU-Th-Fcf">
-                                        <rect key="frame" x="103" y="608" width="160" height="48"/>
+                                        <rect key="frame" x="83.5" y="539" width="160" height="48"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNB-NT-aOz">
                                                 <rect key="frame" x="0.0" y="0.0" width="160" height="48"/>
@@ -265,57 +265,64 @@ This project was built to provide a fun engaging way to improve your skills as a
             <objects>
                 <viewController storyboardIdentifier="myId" id="xzq-CJ-ad9" customClass="ViewWithTask" customModule="_0_Day_UI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="cKD-8v-2sB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="sqV-2v-ITN">
-                                <rect key="frame" x="144" y="152" width="127" height="29"/>
+                                <rect key="frame" x="124" y="137" width="127" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sO-Bt-txA">
-                                <rect key="frame" x="360" y="35" width="30" height="32"/>
+                                <rect key="frame" x="321" y="35" width="30" height="32"/>
                                 <state key="normal" backgroundImage="Group 6"/>
                                 <connections>
                                     <segue destination="tLW-nx-AFB" kind="show" identifier="12345" id="8DV-aD-dKb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1IB-ZI-5Wa">
-                                <rect key="frame" x="128" y="658" width="160" height="48"/>
+                                <rect key="frame" x="108" y="589" width="160" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="18"/>
-                                <state key="normal" title="I did it!" backgroundImage="Button"/>
+                                <state key="normal" image="Button"/>
                                 <connections>
                                     <action selector="buttonaction:" destination="xzq-CJ-ad9" eventType="touchUpInside" id="PlJ-3F-aEb"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't forget to share on Dribbble and/or Twitter when you're done." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45P-WW-AQ5">
-                                <rect key="frame" x="24" y="513.33333333333337" width="366" height="33.666666666666629"/>
+                                <rect key="frame" x="24" y="479" width="327" height="33.5"/>
                                 <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Slk-3H-baA">
-                                <rect key="frame" x="24" y="420.66666666666669" width="366" height="76.666666666666686"/>
+                                <rect key="frame" x="24" y="386.5" width="327" height="76.5"/>
                                 <string key="text">Hint: Design a user profile and be mindful of the most important data, names, imagery, placement, etc. Is it for a serious profile? A social profile?</string>
                                 <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Illustration1" translatesAutoresizingMaskIntoConstraints="NO" id="D02-hh-vV1">
-                                <rect key="frame" x="124" y="216" width="164" height="164"/>
+                                <rect key="frame" x="105" y="190" width="164" height="164"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="1Jo-8G-pWy">
                                 <rect key="frame" x="15" y="42" width="140" height="14"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Day 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gcC-VM-SGv">
-                                <rect key="frame" x="186" y="118" width="43" height="22"/>
+                                <rect key="frame" x="166" y="107" width="43" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="18"/>
                                 <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I did it!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLd-Pb-eiG">
+                                <rect key="frame" x="161" y="602" width="55" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -339,6 +346,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                     <navigationItem key="navigationItem" id="Kkz-2v-qEU"/>
                     <connections>
                         <outlet property="buttonWithComplete" destination="1IB-ZI-5Wa" id="8Xy-eU-byI"/>
+                        <outlet property="iDidItLabel" destination="dLd-Pb-eiG" id="yZf-z2-9RW"/>
                         <outlet property="illustrationToTask" destination="D02-hh-vV1" id="LmF-kd-Lw6"/>
                         <outlet property="labelWithDay" destination="gcC-VM-SGv" id="6qG-De-IxH"/>
                         <outlet property="labelWithHint" destination="Slk-3H-baA" id="xz2-vN-0nC"/>
@@ -354,7 +362,7 @@ This project was built to provide a fun engaging way to improve your skills as a
             <objects>
                 <viewController id="iFA-NO-2dX" customClass="AchivmentViewController" customModule="_0_Day_UI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nIs-Ie-yRB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Jsh-rF-Llx"/>
@@ -369,17 +377,17 @@ This project was built to provide a fun engaging way to improve your skills as a
             <objects>
                 <viewController id="tLW-nx-AFB" customClass="CalendarViewController" customModule="_0_Day_UI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gh4-sr-Rpx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="haR-vG-2Qy">
-                                <rect key="frame" x="10" y="20" width="394" height="666"/>
+                                <rect key="frame" x="10" y="20" width="355" height="597"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sD4-zQ-l8S">
-                                        <rect key="frame" x="96.333333333333329" y="0.0" width="201.66666666666669" height="100"/>
+                                        <rect key="frame" x="76.5" y="0.0" width="202" height="100"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Progress Calendar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mtr-tU-ekp">
-                                                <rect key="frame" x="0.0" y="0.0" width="201.66666666666666" height="100"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="202" height="100"/>
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                                 <color key="textColor" red="0.34901960784313724" green="0.3529411764705882" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -390,10 +398,10 @@ This project was built to provide a fun engaging way to improve your skills as a
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Pxy-5o-6mP">
-                                        <rect key="frame" x="10" y="174.66666666666663" width="374" height="338"/>
+                                        <rect key="frame" x="10" y="140" width="335" height="338"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Zqc-Oh-J8f">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="48"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="48"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTj-ZV-LBw">
                                                         <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
@@ -406,7 +414,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lnm-wS-n4H">
-                                                        <rect key="frame" x="81.666666666666671" y="0.0" width="48.000000000000014" height="48"/>
+                                                        <rect key="frame" x="72" y="0.0" width="48" height="48"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                                         <state key="normal" title="2" backgroundImage="unavailableTask">
                                                             <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -416,7 +424,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dbk-gP-4wI">
-                                                        <rect key="frame" x="163" y="0.0" width="48" height="48"/>
+                                                        <rect key="frame" x="143.5" y="0.0" width="48" height="48"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                                         <state key="normal" title="3" backgroundImage="unavailableTask">
                                                             <color key="titleColor" red="0.79991227388381958" green="0.80005055665969849" blue="0.7999035120010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -426,7 +434,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWw-zh-4PK">
-                                                        <rect key="frame" x="244.66666666666669" y="0.0" width="48" height="48"/>
+                                                        <rect key="frame" x="215.5" y="0.0" width="48" height="48"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                                         <state key="normal" title="4" backgroundImage="unavailableTask">
                                                             <color key="titleColor" red="0.79991227388381958" green="0.80005055665969849" blue="0.7999035120010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -436,7 +444,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EyF-Zf-td7">
-                                                        <rect key="frame" x="326" y="0.0" width="48" height="48"/>
+                                                        <rect key="frame" x="287" y="0.0" width="48" height="48"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                                         <state key="normal" title="5" backgroundImage="unavailableTask">
                                                             <color key="titleColor" red="0.79991227388381958" green="0.80005055665969849" blue="0.7999035120010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -448,7 +456,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="KCh-tP-dn5">
-                                                <rect key="frame" x="0.0" y="58" width="374" height="48"/>
+                                                <rect key="frame" x="0.0" y="58" width="335" height="48"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYK-jY-3mo">
                                                         <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
@@ -461,7 +469,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wyt-xh-e13">
-                                                        <rect key="frame" x="81.666666666666671" y="0.0" width="48.000000000000014" height="48"/>
+                                                        <rect key="frame" x="72" y="0.0" width="48" height="48"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                                         <state key="normal" title="7" backgroundImage="unavailableTask">
                                                             <color key="titleColor" red="0.79991227388381958" green="0.80005055665969849" blue="0.7999035120010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -471,7 +479,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2C-us-FGS">
-                                                        <rect key="frame" x="163" y="0.0" width="48" height="48"/>
+                                                        <rect key="frame" x="143.5" y="0.0" width="48" height="48"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                                         <state key="normal" title="8" backgroundImage="unavailableTask">
                                                             <color key="titleColor" red="0.79991227388381958" green="0.80005055665969849" blue="0.7999035120010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -481,7 +489,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozy-ly-2ga">
-                                                        <rect key="frame" x="244.66666666666669" y="0.0" width="48" height="48"/>
+                                                        <rect key="frame" x="215.5" y="0.0" width="48" height="48"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                                         <state key="normal" title="9" backgroundImage="unavailableTask">
                                                             <color key="titleColor" red="0.79991227388381958" green="0.80005055665969849" blue="0.7999035120010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -491,7 +499,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIK-pj-Ass">
-                                                        <rect key="frame" x="326" y="0.0" width="48" height="48"/>
+                                                        <rect key="frame" x="287" y="0.0" width="48" height="48"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                                         <state key="normal" title="10" backgroundImage="unavailableTask">
                                                             <color key="titleColor" red="0.79991227388381958" green="0.80005055665969849" blue="0.7999035120010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -503,7 +511,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="2qf-rJ-cnz">
-                                                <rect key="frame" x="0.0" y="116.00000000000003" width="374" height="48"/>
+                                                <rect key="frame" x="0.0" y="116" width="335" height="48"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akO-ex-Vqf">
                                                         <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
@@ -516,7 +524,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbX-t6-2oE">
-                                                        <rect key="frame" x="81.666666666666671" y="0.0" width="48.000000000000014" height="48"/>
+                                                        <rect key="frame" x="72" y="0.0" width="48" height="48"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                                         <state key="normal" title="12" backgroundImage="unavailableTask">
                                                             <color key="titleColor" red="0.79991227388381958" green="0.80005055665969849" blue="0.7999035120010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -526,7 +534,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mO2-kY-rrh">
-                                                        <rect key="frame" x="163" y="0.0" width="48" height="48"/>
+                                                        <rect key="frame" x="143.5" y="0.0" width="48" height="48"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                                         <state key="normal" title="13" backgroundImage="unavailableTask">
                                                             <color key="titleColor" red="0.79991227388381958" green="0.80005055665969849" blue="0.7999035120010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -536,7 +544,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fR-dt-1Ps">
-                                                        <rect key="frame" x="244.66666666666669" y="0.0" width="48" height="48"/>
+                                                        <rect key="frame" x="215.5" y="0.0" width="48" height="48"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                                         <state key="normal" title="14" backgroundImage="unavailableTask">
                                                             <color key="titleColor" red="0.79991227388381958" green="0.80005055665969849" blue="0.7999035120010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -546,7 +554,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUH-dZ-wdF">
-                                                        <rect key="frame" x="326" y="0.0" width="48" height="48"/>
+                                                        <rect key="frame" x="287" y="0.0" width="48" height="48"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                                         <state key="normal" title="15" backgroundImage="unavailableTask">
                                                             <color key="titleColor" red="0.79991227388381958" green="0.80005055665969849" blue="0.7999035120010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -558,7 +566,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Z9U-w5-7T6">
-                                                <rect key="frame" x="0.0" y="174.00000000000003" width="374" height="48"/>
+                                                <rect key="frame" x="0.0" y="174" width="335" height="48"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tdc-ze-tsP">
                                                         <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
@@ -571,7 +579,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zoQ-wx-SNs">
-                                                        <rect key="frame" x="81.666666666666671" y="0.0" width="48.000000000000014" height="48"/>
+                                                        <rect key="frame" x="72" y="0.0" width="48" height="48"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                                         <state key="normal" title="17" backgroundImage="unavailableTask">
                                                             <color key="titleColor" red="0.79991227388381958" green="0.80005055665969849" blue="0.7999035120010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -581,7 +589,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xo6-zc-fYd">
-                                                        <rect key="frame" x="163" y="0.0" width="48" height="48"/>
+                                                        <rect key="frame" x="143.5" y="0.0" width="48" height="48"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                                         <state key="normal" title="18" backgroundImage="unavailableTask">
                                                             <color key="titleColor" red="0.79991227388381958" green="0.80005055665969849" blue="0.7999035120010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -591,7 +599,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQy-A5-6KC">
-                                                        <rect key="frame" x="244.66666666666669" y="0.0" width="48" height="48"/>
+                                                        <rect key="frame" x="215.5" y="0.0" width="48" height="48"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                                         <state key="normal" title="19" backgroundImage="unavailableTask">
                                                             <color key="titleColor" red="0.79991227388381958" green="0.80005055665969849" blue="0.7999035120010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -601,7 +609,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTb-tr-8FO">
-                                                        <rect key="frame" x="326" y="0.0" width="48" height="48"/>
+                                                        <rect key="frame" x="287" y="0.0" width="48" height="48"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                                         <state key="normal" title="20" backgroundImage="unavailableTask">
                                                             <color key="titleColor" red="0.79991227388381958" green="0.80005055665969849" blue="0.7999035120010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -613,7 +621,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="4n4-5Y-YWs">
-                                                <rect key="frame" x="0.0" y="232" width="374" height="48"/>
+                                                <rect key="frame" x="0.0" y="232" width="335" height="48"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gc6-dT-n4z">
                                                         <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
@@ -626,7 +634,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEq-zP-M7B">
-                                                        <rect key="frame" x="81.666666666666671" y="0.0" width="48.000000000000014" height="48"/>
+                                                        <rect key="frame" x="72" y="0.0" width="48" height="48"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                                         <state key="normal" title="22" backgroundImage="unavailableTask">
                                                             <color key="titleColor" red="0.79991227388381958" green="0.80005055665969849" blue="0.7999035120010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -636,7 +644,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6V4-TS-5fb">
-                                                        <rect key="frame" x="163" y="0.0" width="48" height="48"/>
+                                                        <rect key="frame" x="143.5" y="0.0" width="48" height="48"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                                         <state key="normal" title="23" backgroundImage="unavailableTask">
                                                             <color key="titleColor" red="0.79991227388381958" green="0.80005055665969849" blue="0.7999035120010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -646,7 +654,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9M-bb-ICS">
-                                                        <rect key="frame" x="244.66666666666669" y="0.0" width="48" height="48"/>
+                                                        <rect key="frame" x="215.5" y="0.0" width="48" height="48"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                                         <state key="normal" title="24" backgroundImage="unavailableTask">
                                                             <color key="titleColor" red="0.79991227388381958" green="0.80005055665969849" blue="0.7999035120010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -656,7 +664,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xqf-vb-5VM">
-                                                        <rect key="frame" x="326" y="0.0" width="48" height="48"/>
+                                                        <rect key="frame" x="287" y="0.0" width="48" height="48"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                                         <state key="normal" title="25" backgroundImage="unavailableTask">
                                                             <color key="titleColor" red="0.79991227388381958" green="0.80005055665969849" blue="0.7999035120010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -668,7 +676,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="fil-No-7oV">
-                                                <rect key="frame" x="0.0" y="290" width="374" height="48"/>
+                                                <rect key="frame" x="0.0" y="290" width="335" height="48"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69E-uM-yiE">
                                                         <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
@@ -681,7 +689,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2T-dd-Kge">
-                                                        <rect key="frame" x="81.666666666666671" y="0.0" width="48.000000000000014" height="48"/>
+                                                        <rect key="frame" x="72" y="0.0" width="48" height="48"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                                         <state key="normal" title="27" backgroundImage="unavailableTask">
                                                             <color key="titleColor" red="0.79991227388381958" green="0.80005055665969849" blue="0.7999035120010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -691,7 +699,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MIH-Xf-gJd">
-                                                        <rect key="frame" x="163" y="0.0" width="48" height="48"/>
+                                                        <rect key="frame" x="143.5" y="0.0" width="48" height="48"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                                         <state key="normal" title="28" backgroundImage="unavailableTask">
                                                             <color key="titleColor" red="0.79991227388381958" green="0.80005055665969849" blue="0.7999035120010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -701,7 +709,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDZ-d5-BPK">
-                                                        <rect key="frame" x="244.66666666666669" y="0.0" width="48" height="48"/>
+                                                        <rect key="frame" x="215.5" y="0.0" width="48" height="48"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                                         <state key="normal" title="29" backgroundImage="unavailableTask">
                                                             <color key="titleColor" red="0.79991227388381958" green="0.80005055665969849" blue="0.7999035120010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -711,7 +719,7 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BcF-pr-75i">
-                                                        <rect key="frame" x="326" y="0.0" width="48" height="48"/>
+                                                        <rect key="frame" x="287" y="0.0" width="48" height="48"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                                         <state key="normal" title="30" backgroundImage="unavailableTask">
                                                             <color key="titleColor" red="0.79991227388381958" green="0.80005055665969849" blue="0.7999035120010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -725,19 +733,19 @@ This project was built to provide a fun engaging way to improve your skills as a
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="WD6-oI-uTw">
-                                        <rect key="frame" x="76.333333333333329" y="608" width="241.66666666666669" height="58"/>
+                                        <rect key="frame" x="57" y="539" width="241.5" height="58"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="bottom" axis="vertical" spacing="-25" translatesAutoresizingMaskIntoConstraints="NO" id="Ywq-fX-qTa">
-                                                <rect key="frame" x="0.0" y="0.0" width="241.66666666666666" height="32.666666666666664"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="241.5" height="32.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmr-WS-bzc">
-                                                        <rect key="frame" x="0.0" y="0.0" width="241.66666666666666" height="39.666666666666664"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="241.5" height="39.5"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="      /30 tasks are completed!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1F-Ms-dwh" userLabel="/30 tasks are completed!">
-                                                        <rect key="frame" x="0.0" y="14.666666666666629" width="241.66666666666666" height="18"/>
+                                                        <rect key="frame" x="0.0" y="14.5" width="241.5" height="18"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -745,10 +753,10 @@ This project was built to provide a fun engaging way to improve your skills as a
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5Ri-T4-9Dn">
-                                                <rect key="frame" x="0.0" y="43.666666666666629" width="241.66666666666666" height="14.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="43.5" width="241.5" height="14.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next task will be tomorrow. See you soon!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Jf-Gj-VVp">
-                                                        <rect key="frame" x="0.0" y="0.0" width="241.66666666666666" height="14.333333333333334"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="241.5" height="14.5"/>
                                                         <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="12"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -827,7 +835,6 @@ This project was built to provide a fun engaging way to improve your skills as a
         <image name="unavailableTask" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8DV-aD-dKb"/>
-        <segue reference="U1M-Rg-QZW"/>
+        <segue reference="zkO-hL-V1L"/>
     </inferredMetricsTieBreakers>
 </document>
