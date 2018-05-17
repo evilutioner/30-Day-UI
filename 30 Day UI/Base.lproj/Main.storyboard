@@ -357,25 +357,43 @@ This project was built to provide a fun engaging way to improve your skills as a
             </objects>
             <point key="canvasLocation" x="2166" y="59"/>
         </scene>
-        <!--Achivment View Controller-->
+        <!--achievementVC-->
         <scene sceneID="l8S-nQ-Rpv">
             <objects>
-                <viewController id="iFA-NO-2dX" customClass="AchivmentViewController" customModule="_0_Day_UI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="achievementVC" title="achievementVC" id="iFA-NO-2dX" customClass="AchivmentViewController" customModule="_0_Day_UI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nIs-Ie-yRB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBy-bp-O7V">
+                                <rect key="frame" x="164" y="416" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="1l5-gz-7rk">
+                                <rect key="frame" x="16" y="36" width="140" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Kq-Zm-ku7">
+                                <rect key="frame" x="162" y="591" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Jsh-rF-Llx"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qJY-mr-OOx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3751" y="36"/>
+            <point key="canvasLocation" x="3749.5999999999999" y="35.532233883058474"/>
         </scene>
         <!--Calendar View Controller-->
         <scene sceneID="kfL-Ws-Ofc">
             <objects>
-                <viewController id="tLW-nx-AFB" customClass="CalendarViewController" customModule="_0_Day_UI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="calendarView" id="tLW-nx-AFB" customClass="CalendarViewController" customModule="_0_Day_UI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gh4-sr-Rpx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -771,6 +789,17 @@ This project was built to provide a fun engaging way to improve your skills as a
                                     <constraint firstAttribute="trailing" secondItem="Pxy-5o-6mP" secondAttribute="trailing" constant="10" id="iRj-1n-k6E"/>
                                 </constraints>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="5RA-ga-IgH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <containerView opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RfP-IJ-lBU">
+                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="RNg-BD-zor" kind="embed" id="KJN-jU-hR5"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -822,6 +851,41 @@ This project was built to provide a fun engaging way to improve your skills as a
             </objects>
             <point key="canvasLocation" x="2288.8000000000002" y="-1201.3493253373315"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="ZX8-ce-yg9">
+            <objects>
+                <viewController id="ir3-Gi-S3h" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tAP-uY-m7U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUe-zV-X8B">
+                                <rect key="frame" x="97" y="49" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="wZ9-kj-SIJ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g0p-3S-Qg0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GCr-v2-bGK">
+            <objects>
+                <viewController id="RNg-BD-zor" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4ef-zp-j4z">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Q1B-ac-iOo"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gnu-ja-1ry" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
     <resources>
         <image name="Button" width="160" height="48"/>
@@ -830,11 +894,12 @@ This project was built to provide a fun engaging way to improve your skills as a
         <image name="Ellipse3" width="20" height="20"/>
         <image name="Group 6" width="30" height="32"/>
         <image name="Illustration1" width="164" height="164"/>
+        <image name="Rectangle" width="375" height="647"/>
         <image name="WelcomeScreenLogo" width="300" height="28"/>
         <image name="logo" width="140" height="14"/>
         <image name="unavailableTask" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zkO-hL-V1L"/>
+        <segue reference="Puh-Zh-Rl5"/>
     </inferredMetricsTieBreakers>
 </document>

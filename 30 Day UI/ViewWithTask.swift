@@ -22,15 +22,22 @@ class ViewWithTask: UIViewController {
             buttonWithComplete.setImage(UIImage(named: "Button"), for: UIControlState.normal)
             UserDefaults.standard.set(false, forKey: "\(daysFromStart)")
             iDidItLabel.isHidden = false
+            numberOfCompletedTask = UserDefaults.standard.integer(forKey: "doingTask")
             numberOfCompletedTask -= 1
+            UserDefaults.standard.set(numberOfCompletedTask, forKey: "doingTask")
+
         } else {
             buttonWithComplete.setImage(UIImage(named: "pressedButton"), for: UIControlState.normal)
             UserDefaults.standard.set(true, forKey: "\(daysFromStart)")
             iDidItLabel.isHidden = true
+            numberOfCompletedTask = UserDefaults.standard.integer(forKey: "doingTask")
             numberOfCompletedTask += 1
+            UserDefaults.standard.set(numberOfCompletedTask, forKey: "doingTask")
             
             if numberOfCompletedTask == 10 {
-                show(<#T##vc: UIViewController##UIViewController#>, sender: <#T##Any?#>)
+                let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+                let vc : UIViewController = mainStoryboard.instantiateViewController(withIdentifier: "achievementVC") as UIViewController
+                self.present(vc, animated: true, completion: nil)
             }
             if numberOfCompletedTask == 20 {
                 
@@ -60,7 +67,7 @@ class ViewWithTask: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+                
         var firstDate = UserDefaults.standard.object(forKey: "MM") as! Date?
         if firstDate == nil {
             UserDefaults.standard.set(Date(), forKey: "MM")
@@ -114,7 +121,6 @@ class ViewWithTask: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         let secondViewController = segue.destination as! CalendarViewController
         secondViewController.daysFromStart = daysFromStart
-    
     }
     
     

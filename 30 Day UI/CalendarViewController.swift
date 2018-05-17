@@ -9,7 +9,8 @@
 import UIKit
 
 class CalendarViewController: UIViewController {
-   
+    
+    
     @IBOutlet weak var label30Tasks: UILabel!
     @IBOutlet weak var mainLabel: UILabel!
     @IBOutlet weak var labelWithCompletedDay: UILabel!
@@ -52,6 +53,8 @@ class CalendarViewController: UIViewController {
     var modDaysFromStart = UserDefaults.standard.object(forKey: "modDaysFromStart")
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        
         
         if modDaysFromStart == nil {
             UserDefaults.standard.set(
@@ -98,8 +101,10 @@ class CalendarViewController: UIViewController {
 
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        
+        
         let intIndex = Int(identifier)! - 1
-
+        
         if buttons[intIndex].backgroundImage(for: .normal) != #imageLiteral(resourceName: "unavailableTask") {
             return true
         }
