@@ -6,8 +6,7 @@ target '30 Day UI' do
   use_frameworks!
 
     pod 'SwiftLint'
-    pod 'Google/Analytics'
-    pod 'Firebase/Core'
+
   target '30 Day UITests' do
     inherit! :search_paths
     pod 'SwiftLint'

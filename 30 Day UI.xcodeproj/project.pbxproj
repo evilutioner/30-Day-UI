@@ -10,6 +10,7 @@
 		094567B4EE882D4E35D9ECD8 /* Pods_30_Day_UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC7C43BC25F80473BA4655F /* Pods_30_Day_UI.framework */; };
 		6A678B0BE6CC96152FAAF475 /* Pods_30_Day_UIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA2FD11D4A755D8AC71894A /* Pods_30_Day_UIUITests.framework */; };
 		C5000887209505A500455C81 /* MainViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5000886209505A500455C81 /* MainViewController2.swift */; };
+		C528C9E220BC11D5005D0D39 /* VisualActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C528C9E120BC11D5005D0D39 /* VisualActivityViewController.swift */; };
 		C53E6ADF209EEC07000F62CA /* 40.png in Resources */ = {isa = PBXBuildFile; fileRef = C53E6AD7209EEC06000F62CA /* 40.png */; };
 		C53E6AE0209EEC07000F62CA /* 87.png in Resources */ = {isa = PBXBuildFile; fileRef = C53E6AD8209EEC06000F62CA /* 87.png */; };
 		C53E6AE1209EEC07000F62CA /* 76.png in Resources */ = {isa = PBXBuildFile; fileRef = C53E6AD9209EEC06000F62CA /* 76.png */; };
@@ -19,8 +20,17 @@
 		C53E6AE5209EEC07000F62CA /* 60.png in Resources */ = {isa = PBXBuildFile; fileRef = C53E6ADD209EEC07000F62CA /* 60.png */; };
 		C53E6AE6209EEC07000F62CA /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = C53E6ADE209EEC07000F62CA /* 58.png */; };
 		C53E6AE8209EEC5A000F62CA /* 180.png in Resources */ = {isa = PBXBuildFile; fileRef = C53E6AE7209EEC5A000F62CA /* 180.png */; };
+		C53ED64A20BC1C7700EF1EE3 /* Achievement10ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53ED64920BC1C7700EF1EE3 /* Achievement10ViewController.swift */; };
+		C53ED64C20BC1C8100EF1EE3 /* Achievement20ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53ED64B20BC1C8100EF1EE3 /* Achievement20ViewController.swift */; };
+		C53ED64E20BC7FFE00EF1EE3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53ED64D20BC7FFE00EF1EE3 /* Constants.swift */; };
+		C54E6FAB20B1C611005285B0 /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = C525DFD72084098200D5C157 /* SF-Pro-Text-Medium.otf */; };
+		C54E6FAC20B1C611005285B0 /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C525DFD62084098200D5C157 /* SF-Pro-Text-Regular.otf */; };
+		C54E6FAD20B1C611005285B0 /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = C525DFD52084098200D5C157 /* SF-Pro-Display-Medium.otf */; };
+		C54E6FAE20B1C611005285B0 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C56758FA209E77D300613B34 /* SF-Pro-Display-Regular.otf */; };
+		C54E6FAF20B1C611005285B0 /* SF-Pro-Display-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = C525DFCE2084091200D5C157 /* SF-Pro-Display-Black.otf */; };
+		C54E6FB020B1C611005285B0 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C525DFCD2084090E00D5C157 /* SF-Pro-Display-Bold.otf */; };
+		C54E6FD820B32EE1005285B0 /* AchievementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E6FD720B32EE1005285B0 /* AchievementViewController.swift */; };
 		C563601D20962F010019E474 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C563601C20962F000019E474 /* CalendarViewController.swift */; };
-		C56758FC209EE83500613B34 /* AchivmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56758FB209EE83500613B34 /* AchivmentViewController.swift */; };
 		C5A28C1B2083E7AD00F6CBFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A28C1A2083E7AD00F6CBFF /* AppDelegate.swift */; };
 		C5A28C1D2083E7AD00F6CBFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A28C1C2083E7AD00F6CBFF /* ViewController.swift */; };
 		C5A28C202083E7AD00F6CBFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5A28C1E2083E7AD00F6CBFF /* Main.storyboard */; };
@@ -62,6 +72,7 @@
 		C525DFD52084098200D5C157 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
 		C525DFD62084098200D5C157 /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
 		C525DFD72084098200D5C157 /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
+		C528C9E120BC11D5005D0D39 /* VisualActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualActivityViewController.swift; sourceTree = "<group>"; };
 		C53E6AD7209EEC06000F62CA /* 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 40.png; path = icons/40.png; sourceTree = SOURCE_ROOT; };
 		C53E6AD8209EEC06000F62CA /* 87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 87.png; path = icons/87.png; sourceTree = SOURCE_ROOT; };
 		C53E6AD9209EEC06000F62CA /* 76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 76.png; path = icons/76.png; sourceTree = SOURCE_ROOT; };
@@ -71,9 +82,12 @@
 		C53E6ADD209EEC07000F62CA /* 60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 60.png; path = icons/60.png; sourceTree = SOURCE_ROOT; };
 		C53E6ADE209EEC07000F62CA /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 58.png; path = icons/58.png; sourceTree = SOURCE_ROOT; };
 		C53E6AE7209EEC5A000F62CA /* 180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 180.png; path = icons/180.png; sourceTree = SOURCE_ROOT; };
+		C53ED64920BC1C7700EF1EE3 /* Achievement10ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement10ViewController.swift; sourceTree = "<group>"; };
+		C53ED64B20BC1C8100EF1EE3 /* Achievement20ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement20ViewController.swift; sourceTree = "<group>"; };
+		C53ED64D20BC7FFE00EF1EE3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C54E6FD720B32EE1005285B0 /* AchievementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewController.swift; sourceTree = "<group>"; };
 		C563601C20962F000019E474 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		C56758FA209E77D300613B34 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
-		C56758FB209EE83500613B34 /* AchivmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchivmentViewController.swift; sourceTree = "<group>"; };
 		C5A28C172083E7AD00F6CBFF /* 30 Day UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "30 Day UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5A28C1A2083E7AD00F6CBFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5A28C1C2083E7AD00F6CBFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -192,6 +206,39 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
+		C59631A520BC82B6007CA42C /* View controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C5A28C1C2083E7AD00F6CBFF /* ViewController.swift */,
+				C5000886209505A500455C81 /* MainViewController2.swift */,
+				C5F7CC3A2088A20200BCA84C /* ViewWithTask.swift */,
+				C528C9E120BC11D5005D0D39 /* VisualActivityViewController.swift */,
+				C563601C20962F000019E474 /* CalendarViewController.swift */,
+				C53ED64920BC1C7700EF1EE3 /* Achievement10ViewController.swift */,
+				C53ED64B20BC1C8100EF1EE3 /* Achievement20ViewController.swift */,
+				C54E6FD720B32EE1005285B0 /* AchievementViewController.swift */,
+			);
+			path = "View controllers";
+			sourceTree = "<group>";
+		};
+		C59631A620BC82ED007CA42C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C5A28C1E2083E7AD00F6CBFF /* Main.storyboard */,
+				C5A28C232083E7AE00F6CBFF /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C59631A720BC82FF007CA42C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C5E0D4C0208C747200D00E12 /* Assets.xcassets */,
+				C5F7CC3820889E1A00BCA84C /* Ilustratuions.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		C5A28C0E2083E7AD00F6CBFF = {
 			isa = PBXGroup;
 			children = (
@@ -219,16 +266,11 @@
 		C5A28C192083E7AD00F6CBFF /* 30 Day UI */ = {
 			isa = PBXGroup;
 			children = (
+				C59631A520BC82B6007CA42C /* View controllers */,
+				C59631A720BC82FF007CA42C /* Assets */,
+				C59631A620BC82ED007CA42C /* Storyboards */,
 				C5A28C1A2083E7AD00F6CBFF /* AppDelegate.swift */,
-				C5A28C1C2083E7AD00F6CBFF /* ViewController.swift */,
-				C5000886209505A500455C81 /* MainViewController2.swift */,
-				C5F7CC3A2088A20200BCA84C /* ViewWithTask.swift */,
-				C563601C20962F000019E474 /* CalendarViewController.swift */,
-				C5E0D4C0208C747200D00E12 /* Assets.xcassets */,
-				C5A28C1E2083E7AD00F6CBFF /* Main.storyboard */,
-				C56758FB209EE83500613B34 /* AchivmentViewController.swift */,
-				C5F7CC3820889E1A00BCA84C /* Ilustratuions.xcassets */,
-				C5A28C232083E7AE00F6CBFF /* LaunchScreen.storyboard */,
+				C53ED64D20BC7FFE00EF1EE3 /* Constants.swift */,
 				C5A28C262083E7AE00F6CBFF /* Info.plist */,
 			);
 			path = "30 Day UI";
@@ -370,13 +412,19 @@
 				C53E6AE8209EEC5A000F62CA /* 180.png in Resources */,
 				C53E6AE2209EEC07000F62CA /* 152.png in Resources */,
 				C53E6AE0209EEC07000F62CA /* 87.png in Resources */,
+				C54E6FB020B1C611005285B0 /* SF-Pro-Display-Bold.otf in Resources */,
 				C5A28C252083E7AE00F6CBFF /* LaunchScreen.storyboard in Resources */,
+				C54E6FAC20B1C611005285B0 /* SF-Pro-Text-Regular.otf in Resources */,
 				C5E0D4C1208C747200D00E12 /* Assets.xcassets in Resources */,
+				C54E6FAD20B1C611005285B0 /* SF-Pro-Display-Medium.otf in Resources */,
 				C53E6AE3209EEC07000F62CA /* 80.png in Resources */,
 				C53E6AE4209EEC07000F62CA /* 120.png in Resources */,
+				C54E6FAF20B1C611005285B0 /* SF-Pro-Display-Black.otf in Resources */,
 				C53E6AE1209EEC07000F62CA /* 76.png in Resources */,
 				C53E6AE5209EEC07000F62CA /* 60.png in Resources */,
 				C53E6AE6209EEC07000F62CA /* 58.png in Resources */,
+				C54E6FAB20B1C611005285B0 /* SF-Pro-Text-Medium.otf in Resources */,
+				C54E6FAE20B1C611005285B0 /* SF-Pro-Display-Regular.otf in Resources */,
 				C5A28C202083E7AD00F6CBFF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,10 +453,24 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-30 Day UI/Pods-30 Day UI-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -552,12 +614,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C56758FC209EE83500613B34 /* AchivmentViewController.swift in Sources */,
+				C528C9E220BC11D5005D0D39 /* VisualActivityViewController.swift in Sources */,
 				C563601D20962F010019E474 /* CalendarViewController.swift in Sources */,
 				C5A28C1D2083E7AD00F6CBFF /* ViewController.swift in Sources */,
+				C53ED64E20BC7FFE00EF1EE3 /* Constants.swift in Sources */,
+				C53ED64C20BC1C8100EF1EE3 /* Achievement20ViewController.swift in Sources */,
+				C54E6FD820B32EE1005285B0 /* AchievementViewController.swift in Sources */,
 				C5F7CC3B2088A20200BCA84C /* ViewWithTask.swift in Sources */,
 				C5000887209505A500455C81 /* MainViewController2.swift in Sources */,
 				C5A28C1B2083E7AD00F6CBFF /* AppDelegate.swift in Sources */,
+				C53ED64A20BC1C7700EF1EE3 /* Achievement10ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
