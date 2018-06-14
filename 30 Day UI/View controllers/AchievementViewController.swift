@@ -14,9 +14,9 @@ class AchievementViewController: UIViewController {
 
     @IBAction func shareButton(_ sender: Any) {
         
-        let itemsToShare: [Any] = [ textToShare, #imageLiteral(resourceName: "1024")]
+        let itemsToShare: [Any] = [ textToShare30, #imageLiteral(resourceName: "1024")]
         
-        let vc = VisualActivityViewController(activityItems: itemsToShare30, applicationActivities: nil)
+        let vc = VisualActivityViewController(activityItems: itemsToShare, applicationActivities: nil)
         
         vc.previewNumberOfLines = 10
         presentActionSheet(vc, from: sender as! UIView)
@@ -32,19 +32,6 @@ class AchievementViewController: UIViewController {
         
         present(vc, animated: true, completion: nil)
     }
-    
-//    @IBAction func twitterShare(_ sender: UIButton) {
-//        let text = "I'm completed #30DaysUI Challenge!"
-//
-//        let textToShare = [ text ]
-//        let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
-//        activityViewController.popoverPresentationController?.sourceView = self.view
-//
-//        activityViewController.excludedActivityTypes = [ UIActivityType.airDrop, UIActivityType.postToFacebook ]
-//
-//        self.present(activityViewController, animated: true, completion: nil)
-//    }
-//
     
     let yourAttributes : [NSAttributedStringKey: Any] = [
         NSAttributedStringKey.foregroundColor : UIColor.black,
