@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -33,9 +32,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WelcomeScreenLogo" translatesAutoresizingMaskIntoConstraints="NO" id="eR9-pV-WtU">
-                                <rect key="frame" x="38" y="44" width="300" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WelcomeScreenLogo" translatesAutoresizingMaskIntoConstraints="NO" id="eR9-pV-WtU">
+                                <rect key="frame" x="37.5" y="44" width="300" height="28"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome Friend!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMx-Sg-nfl">
                                 <rect key="frame" x="96" y="160" width="184" height="32"/>
@@ -80,7 +78,9 @@ This project was built to provide a fun engaging way to improve your skills as a
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="k8g-Tc-y4Y" secondAttribute="bottom" constant="35" id="2xp-a8-Ebs"/>
+                            <constraint firstItem="eR9-pV-WtU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="5aF-d2-iZm"/>
                             <constraint firstItem="k8g-Tc-y4Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cUg-J2-kIM"/>
+                            <constraint firstItem="eR9-pV-WtU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w3c-cc-6nI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -96,7 +96,7 @@ This project was built to provide a fun engaging way to improve your skills as a
         <!--Main View Controller2-->
         <scene sceneID="aOG-aa-d7U">
             <objects>
-                <viewController id="ga6-hw-smo" customClass="MainViewController2" customModule="_0_Day_UI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="ga6-hw-smo" customClass="MainViewController2" customModule="_0_Day_UI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7hS-aX-xHv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -263,7 +263,7 @@ This project was built to provide a fun engaging way to improve your skills as a
         <!--View With Task-->
         <scene sceneID="MDZ-ZF-Mk0">
             <objects>
-                <viewController storyboardIdentifier="myId" id="xzq-CJ-ad9" customClass="ViewWithTask" customModule="_0_Day_UI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="myId" modalTransitionStyle="crossDissolve" id="xzq-CJ-ad9" customClass="ViewWithTask" customModule="_0_Day_UI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="cKD-8v-2sB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -292,13 +292,13 @@ This project was built to provide a fun engaging way to improve your skills as a
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't forget to share on Dribbble and/or Twitter when you're done." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45P-WW-AQ5">
-                                <rect key="frame" x="24" y="479.5" width="327" height="33.5"/>
+                                <rect key="frame" x="24" y="479" width="327" height="33.5"/>
                                 <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Slk-3H-baA">
-                                <rect key="frame" x="24" y="387" width="327" height="76.5"/>
+                                <rect key="frame" x="24" y="386.5" width="327" height="76.5"/>
                                 <string key="text">Hint: Design a user profile and be mindful of the most important data, names, imagery, placement, etc. Is it for a serious profile? A social profile?</string>
                                 <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="16"/>
                                 <nil key="textColor"/>
@@ -1020,6 +1020,6 @@ This project was built to provide a fun engaging way to improve your skills as a
         <image name="unavailableTask" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="M3Q-Rh-FSc"/>
+        <segue reference="zkO-hL-V1L"/>
     </inferredMetricsTieBreakers>
 </document>

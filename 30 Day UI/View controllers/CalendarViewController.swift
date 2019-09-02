@@ -49,10 +49,9 @@ class CalendarViewController: UIViewController {
     @IBOutlet weak var buttonDay30: UIButton!
 
     
-    var daysFromStart = 0
+    var daysFromStart = 1
     var buttons: [UIButton] = []
     var labels: [UILabel] = []
-    var modDaysFromStart = UserDefaults.standard.object(forKey: "modDaysFromStart")
     
     
     override func viewDidLoad() {
@@ -60,17 +59,11 @@ class CalendarViewController: UIViewController {
         
         failedView.isHidden = true
         
-        if modDaysFromStart == nil {
-            UserDefaults.standard.set(
-            daysFromStart, forKey: "modDaysFromStart")
-            modDaysFromStart = UserDefaults.standard.object(forKey: "modDaysFromStart")
-        }
-        
         buttons = [buttonDay1, buttonDay2, buttonDay3, buttonDay4, buttonDay5, buttonDay6, buttonDay7, buttonDay8, buttonDay9, buttonDay10, buttonDay11, buttonDay12, buttonDay13, buttonDay14, buttonDay15, buttonDay16, buttonDay17, buttonDay18, buttonDay19, buttonDay20, buttonDay21, buttonDay22, buttonDay23, buttonDay24, buttonDay25, buttonDay26, buttonDay27, buttonDay28, buttonDay29, buttonDay30]
         
         var i = 0
         var numberOfCompletedTask = 0
-        while i < modDaysFromStart as! Int {
+        while i < daysFromStart {
             i += 1
             let xxx = UserDefaults.standard.object(forKey: "\(i)")
             if xxx == nil {
